@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head.html -->
+@@include('blocks/head.html', {
+"title": "Главная",
+"style": "style.min.css",
+})
+
+<body>
+    <div class="wrapper">
+        <!-- header.html -->
+        <!-- @@include('blocks/header.html', {}) -->
+        <!-- так как здесь специфичные стили для Header, то его чисто кодом подключаю -->
+        <header class="header home-page__header">
+            <section class="header-block">
+                <div class="header__container">
+                    <div class="header-contacts">
+                        <div class="header-contact">
+                            <p>Отдел бронирования</p>
+                            <div class="header-contact__link link-animation">
+                                <a href="tel:+79259224200">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="@img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                            </div>
+                        </div>
+                        <div class="header-contact">
+                            <p>Прием и размещение</p>
+                            <div class="header-contact__link link-animation">
+                                <a href="tel:+74997558888">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="@img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-logo common-logo">
+                        <a href="/home.html">
+                            <svg class="sprite-icon__header-logo">
+                                <use href="@img/icons/icons.svg#header_logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-actions">
+                        <div class="header-actions__simple">
+                            <div class="header-action action-language">
+                                <button class="language-selector__russian lang_selector">Ру</button>
+                                <button class="language-selector__english lang_selector">Eng</button>
+                            </div>
+                            <div class="header-action action-enter">
+                                <button class="action-enter__button">
+                                    <svg class="sprite-icon__header_enter">
+                                        <use href="@img/icons/icons.svg#header_enter"></use>
+                                    </svg>
+                                    <span>Войти</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header-action__burger ">
+                            <button class="header__burger-button">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Меню при клике на бургер -->
+            <section class="header__burger-menu ">
+                <div class="burger-menu__container">
+                    <h1 class="burger-menu__title">Меню</h1>
+
+                    <div class="burger-menu__navigation menu-nav">
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Тарифы
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="@img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Аренда VIP автомобиля</a>
+                                                <a href="" class="link-animation">Тарифы 2022-2023</a>
+                                                <a href="" class="link-animation">Новогодний тариф</a>
+                                                <a href="" class="link-animation">каникулы и подарки</a>
+                                                <a href="" class="link-animation">способы оплаты</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/rooms.html" class="column-nav__link link-animation">номера</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Корпоративным клиентам
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="@img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Конференц залы</a>
+                                                <a href="" class="link-animation">Банкеты</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/about.html" class="column-nav__link link-animation">о нас</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Spa
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="@img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Бассейны</a>
+                                                <a href="" class="link-animation">Сауны</a>
+                                                <a href="" class="link-animation">Спорт-комплекс</a>
+                                                <a href="" class="link-animation">SPA — меню </a>
+                                                <a href="" class="link-animation">Меню салона красоты</a>
+                                                <a href="" class="link-animation">SPA для двоих</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/news.html" class="column-nav__link link-animation">новости</a>
+                                    </li>
+                                    <li class="column-nav__item">
+                                        <a href="/gallery.html" class="column-nav__link link-animation">галерея</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Контакты
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="@img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="/contacts.html" class="link-animation">Схема проезда</a>
+                                                <a href="" class="link-animation">Политика конфиденциальности</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="header-contacts burger-menu__contacts">
+                        <div class="header-contact">
+                            <p>Отдел бронирования</p>
+                            <div class="header-contact__link">
+                                <a href="tel:+79259224200">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="@img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                            </div>
+                            <div class="header-contact__link">
+                                <a href="tel:+79259224201">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="@img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-01</a>
+                            </div>
+                        </div>
+                        <div class="header-contact">
+                            <p>Прием и размещение</p>
+                            <div class="header-contact__link">
+                                <a href="tel:+74997558888">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="@img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- home_main.html -->
+        @@include('blocks/pages/home_main.html', {})
+        <!-- footer.html -->
+        @@include('blocks/footer.html', {})
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

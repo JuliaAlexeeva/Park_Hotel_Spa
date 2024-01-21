@@ -1,0 +1,133 @@
+<main class="main">
+
+    <!-- Общая навигация на сайте -->
+    @@include('../navigation.html', {
+        "current_page": "Swiper",
+    })
+    <div class="section__swiper">
+        <div class="swiper__container">
+            <!-- Главный контейнер слайдера -->
+            <!-- изменить направление слайдера: dir="rtl" Right-To-Left -->
+            <div class="swiper image-slider">
+                <!-- Обязательная оболочка -->
+                <div class="swiper-wrapper image-slider__wrapper">
+                    <!-- Слайды -->
+                    <!-- Добавить навигацию по хэшу: data-hash="slide-1" -->
+                    <div data-hash="slide-1" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_1.png" alt="">
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-2" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_2.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_2.png" alt="">
+                        </div> -->
+
+                        <!-- Слайдер внутри слайдера: + ещё стили пишутся  (НЕ РАБОТАЕТ)-->
+                        <!-- <div class="swiper image-in-slider">
+                            <div class="image-in-slider__wrapper swiper-wrapper">
+                                <div class="image-in-slider__slide swiper-slide">
+                                    <div class="image-in-slider__image">
+                                        <img data-src="@img/main/rooms-page/room_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <img data-src="@img/main/rooms-page/room_3.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <img data-src="@img/main/rooms-page/room_4.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <img data-src="@img/main/rooms-page/room_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination image-slider__pagination"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-3" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_3.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_3.png" alt="">
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-4" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_4.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_4.png" alt="">
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-5" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_1.png" alt="">
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-6" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_2.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_2.png" alt="">
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-7" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <img data-src="@img/main/rooms-page/room_3.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <img src="@img/main/rooms-page/room_3.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Добавляем, если нам нужны стрелки управления -->
+                <div class="swiper-button-prev image-slider__prev"></div>
+                <div class="swiper-button-next image-slider__next"></div>
+
+                <!-- Добавляем, если нам нужна пагинация -->
+                <div class="swiper-pagination image-slider__pagination"></div>
+
+                <!-- Добавляем, если нам нужна полоса прокрутки (scrollbar) -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            
+        </div>
+    </div>
+
+              
+</main>

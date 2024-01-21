@@ -1,0 +1,185 @@
+<main class="main">
+
+    <!-- Общая навигация на сайте -->
+    @@include('../navigation.html', {
+        "current_page": "О нас",
+    })
+    
+    <section class="main__about-intro">
+        <div class="about-intro__container">
+            <div class="about-intro__block">
+                <h2 class="about-intro__title common-title">О нас</h2>
+                <p class="about-intro__text">Наша компания уже более пятнадцати лет занимается отельным бизнесом. Наши гостинично-развлекательные комплексы «Солнечный парк-отель» (Подмосковье, Солнечногорский р-н) и «Прометей клуб» (Сочи, Лазаревское) хорошо известны и пользуются неизменной популярностью на отечественном туристическом рынке. Мы первыми в России начали работать по системе расширенного «all inclusive», сделали своим приоритетом развлечение гостей и семейный отдых с детьми, предложили гостям современные SPA услуги. Нашим важным конкурентным преимуществом является чрезвычайно объемный пакет включенных в стоимость проживания услуг.</p>
+                <div class="about-intro__images">
+                    <div class="about-intro__image">
+                        <img src="@img/main/about-page/img_1.png" alt="">
+                    </div>
+                    <div class="about-intro__image">
+                        <img src="@img/main/about-page/img_2.png" alt="">
+                    </div>
+                    <div class="about-intro__image">
+                        <img src="@img/main/about-page/img_3.png" alt="">
+                    </div>
+                </div>
+                <p class="about-intro__text">Наши гостинично-развлекательные комплексы находятся в непрерывном развитии. С каждым годом расширяется их инфраструктура, совершенствуется сервис, предлагаются новые услуги, отвечающие растущим запросам рынка. Так, в московском регионе остро ощущается дефицит загородных площадок для проведения крупных корпоративных мероприятий. Это чрезвычайно перспективный сегмент рынка, с которым наша компания связывает далеко идущие планы. На территории парк-отеля «Солнечный» открылся уникальный для Подмосковья конгресс-холл, главный зал которого рассчитан на 850 мест.</p>
+                <p class="about-intro__text">В течение ближайших трех-пяти лет мы планируем расширить территорию парк-отеля «Солнечный» почти втрое. Освоение новых земельных участков уже началось. Будет разбит обширный яблоневый сад, откроются новые кафе и рестораны. При этом важно отметить, что наш отель стал ближе для жителей Московского мегаполиса с открытием скоростного автобана М-11.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__about-allinclusive">
+        <div class="about-allinclusive__container">
+            <div class="about-allinclusive__block">
+                <h2 class="about-allinclusive__title common-title">Обслуживание по системе <br>«all inclusive»</h2>
+                <p class="about-allinclusive__text">Наша компания уже более пятнадцати лет занимается отельным бизнесом. Наши гостинично-развлекательные комплексы «Солнечный парк-отель» (Подмосковье, Солнечногорский р-н) и «Прометей клуб» (Сочи, Лазаревское) хорошо известны и пользуются неизменной популярностью на отечественном туристическом рынке. Мы первыми в России начали работать по системе расширенного «all inclusive», сделали своим приоритетом развлечение гостей и семейный отдых с детьми, предложили гостям современные SPA услуги. Нашим важным конкурентным преимуществом является чрезвычайно объемный пакет включенных в стоимость проживания услуг.</p>
+                <div class="about-allinclusive__benefits allincl-benefits">
+                    <div class="allincl-benefits__block">
+                        <ul class="list-benefits__items">
+                            <li class="list-benefits__item">Расширенный шведский стол: завтрак, обед, ужин</li>
+                            <li class="list-benefits__item">В течение всего дня с 8-00 до 23-00:</li>
+                        </ul>
+                        <ul class="list-benefits__subitems">
+                            <li class="list-benefits__subitem">разливное пиво, кофе, чай, фрукты, соки, пепси-кола, минеральная вода, алкогольные напитки (вино, водка, шампанское);</li>
+                            <li class="list-benefits__subitem">бильярд, боулинг, пинг-понг, открытая площадка для волейбола и баскетбола, футбольное поле;</li>
+                            <li class="list-benefits__subitem">мини-гольф, прокат велосипедов;каток (в зимнее время), оборудованный пляж (в летнее время);</li>
+                            <li class="list-benefits__subitem">детский развлекательный центр, игровые автоматы, детская анимация, открытая площадка для детей;</li>
+                            <li class="list-benefits__subitem">автостоянка.</li>
+                        </ul>
+                    </div>
+                    <div class="allincl-benefits__slider swiper">
+                        <div class="allincl-benefits__wrapper swiper-wrapper">
+                            <!-- При использовании ленивой загрузки там через picture выводится, и только 1х1 изображение -->
+                            <!-- поэтому убираю такую ленивую загрузку -->
+                            <div class="allincl-benefits__slide swiper-slide">
+                                <img src="@img/main/about-page/slider-img_1.png" alt="">
+                                <!-- <img data-src="@img/main/about-page/slider-img_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                <div class="swiper-lazy-preloader"></div> -->
+                            </div>
+                            <div class="allincl-benefits__slide swiper-slide">
+                                <img src="@img/main/about-page/slider-img_1.png" alt="">
+                                <!-- <img data-src="@img/main/about-page/slider-img_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                <div class="swiper-lazy-preloader"></div> -->
+                            </div>
+                            <div class="allincl-benefits__slide swiper-slide">
+                                <img src="@img/main/about-page/slider-img_1.png" alt="">
+                                <!-- <img data-src="@img/main/about-page/slider-img_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                <div class="swiper-lazy-preloader"></div> -->
+                            </div>
+                            <div class="allincl-benefits__slide swiper-slide">
+                                <img src="@img/main/about-page/slider-img_1.png" alt="">
+                                <!-- <img data-src="@img/main/about-page/slider-img_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                <div class="swiper-lazy-preloader"></div> -->
+                            </div>
+                            <div class="allincl-benefits__slide swiper-slide">
+                                <img src="@img/main/about-page/slider-img_1.png" alt="">
+                                <!-- <img data-src="@img/main/about-page/slider-img_1.png" src="@img/1x1.png" class="swiper-lazy" alt="">
+                                <div class="swiper-lazy-preloader"></div> -->
+                            </div>
+                        </div>
+                        <!-- Добавляем, если нам нужны стрелки управления -->
+                        <div class="swiper-button-prev allincl-benefits__slider-prev"></div>
+                        <div class="swiper-button-next allincl-benefits__slider-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__about-additionally">
+        <div class="about-additionally__container">
+            <div class="about-additionally__block">
+                <h2 class="about-additionally__title common-title about-common__title">Дополнительный сервис<br>(оплачивается дополнительно):</h2>
+                <div class="about-additionally__services">
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-1">
+                                <use href="@img/icons/icons.svg#about-page_icon-1"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Рестораны A La carte<br>(обслуживание по меню)</p>
+                    </div>
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-2">
+                                <use href="@img/icons/icons.svg#about-page_icon-2"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Beauty зона SPA-комплекса</p>
+                    </div>
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-3">
+                                <use href="@img/icons/icons.svg#about-page_icon-3"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Магазин-сувенирная</p>
+                    </div>
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-4">
+                                <use href="@img/icons/icons.svg#about-page_icon-4"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Мини-бар в номерах</p>
+                    </div>
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-5">
+                                <use href="@img/icons/icons.svg#about-page_icon-5"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Room-service 24 часа</p>
+                    </div>
+                    <div class="about-additionally__service add-service">
+                        <div class="add-service__icon">
+                            <svg class="sprite-icon__about-page_icon-6">
+                                <use href="@img/icons/icons.svg#about-page_icon-6"></use>
+                            </svg>
+                        </div>
+                        <p class="add-service__name">Услуги прачечной</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__about-corp">
+        <div class="about-corp__container">
+            <div class="about-corp__block">
+                <h2 class="about-corp__title common-title about-common__title">Корпоративным клиентам</h2>
+                <div class="about-corp__cards">
+                    <div class="about-corp__card corp-card">
+                        <div class="corp-card__img">
+                            <img src="@img/main/about-page/corp_img-1.png" alt="">
+                        </div>
+                        <h3 class="corp-card__name">КОНФЕРЕНЦ-ЗАЛЫ</h3>
+                        <p class="corp-card__text">Конференц-залы, оснащенные современным демонстрационным, проекционным, звукоусиливающим оборудованием, аудитории для проведения семинаров, переговорные комнаты.</p>
+                    </div>
+                    <div class="about-corp__card corp-card">
+                        <div class="corp-card__img">
+                            <img src="@img/main/about-page/corp_img-2.png" alt="">
+                        </div>
+                        <h3 class="corp-card__name">ОБОРУДОВАНИЕ ДЛЯ КОНФЕРЕНЦИИ</h3>
+                        <p class="corp-card__text">В каждый зал бесплатно предоставляется флипчарт с набором бумаги и маркеров. Оборудование стационарно – экран + проектор/плазменная панель (в зависимости от оснащения зала). Стандартные кофе-брейки (чай, кофе, сок, вода и крекеры) накрываются по системе «все включено» (бесплатно).</p>
+                    </div>
+                    <div class="about-corp__card corp-card">
+                        <div class="corp-card__img">
+                            <img src="@img/main/about-page/corp_img-3.png" alt="">
+                        </div>
+                        <h3 class="corp-card__name">БАНКЕТНЫЕ ПЛОЩАДКИ</h3>
+                        <p class="corp-card__text">К услугам корпоративных групп предлагаются банкетные площадки различной вместимости.</p>
+                    </div>
+                    <div class="about-corp__card corp-card">
+                        <div class="corp-card__img">
+                            <img src="@img/main/about-page/corp_img-4.png" alt="">
+                        </div>
+                        <h3 class="corp-card__name">СВАДЬБЫ</h3>
+                        <p class="corp-card__text">Для проведения свадебных мероприятий в Отеле предлагаются свадебная арка для выездной регистрации, банкетные площадки различной вместимости и проживание для гостей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

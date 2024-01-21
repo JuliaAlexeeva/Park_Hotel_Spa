@@ -1,0 +1,278 @@
+<main class="main">
+
+    <!-- Общая навигация на сайте -->
+    @@include('../navigation.html', {
+        "current_page": "Галерея",
+    })
+
+    <section class="main__gallery-page">
+        <div class="gallery-page__container">
+            <div class="gallery-page__block">
+                <h2 class="gallery-page__title common-title">Галерея</h2>
+                <div class="gallery-page__items">
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="territory" class="gall-item__img">
+                            <img src="@img/main/gallery-page/territory.png" alt="territory">
+                        </div>
+                        <p>Территория</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="reception" class="gall-item__img">
+                            <img src="@img/main/gallery-page/reception.png" alt="reception">
+                        </div>
+                        <p>Ресепшн</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="complex" class="gall-item__img">
+                            <img src="@img/main/gallery-page/complex.png" alt="complex">
+                        </div>
+                        <p>Ресторанный комплекс</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="grill-bar" class="gall-item__img">
+                            <img src="@img/main/gallery-page/grill-bar.png" alt="grill-bar">
+                        </div>
+                        <p>Гриль-бар</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="tea-house" class="gall-item__img">
+                            <img src="@img/main/gallery-page/tea-house.png" alt="tea-house">
+                        </div>
+                        <p>Чайный дом</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="reader-bar" class="gall-item__img">
+                            <img src="@img/main/gallery-page/reader-bar.png" alt="reader-bar">
+                        </div>
+                        <p>Book Reader Bar</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="shop" class="gall-item__img">
+                            <img src="@img/main/gallery-page/shop.png" alt="shop">
+                        </div>
+                        <p>Магазин</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="sport" class="gall-item__img">
+                            <img src="@img/main/gallery-page/sport.png" alt="sport">
+                        </div>
+                        <p>Развлечения и спорт</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="animation" class="gall-item__img">
+                            <img src="@img/main/gallery-page/animation.png" alt="animation">
+                        </div>
+                        <p>Анимация</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="spa" class="gall-item__img">
+                            <img src="@img/main/gallery-page/spa.png" alt="spa">
+                        </div>
+                        <p>SPA</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="conference" class="gall-item__img">
+                            <img src="@img/main/gallery-page/conference.png" alt="conference">
+                        </div>
+                        <p>Конференц-зона</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="fond" class="gall-item__img">
+                            <img src="@img/main/gallery-page/fond.png" alt="fond">
+                        </div>
+                        <p>Номерной фонд</p>
+                    </div>
+                </div>
+                <div class="gallery-page__buttons">
+                    <a href="" class="gallery-page__button common-button__transparent">связаться с нами</a>
+                    <a href="" class="gallery-page__button common-button__fill">забронировать номер</a>
+                </div>
+            </div>
+
+            <!-- Галерея картинок по категориям для lightbox -->
+
+            <div class="gall-item__lightbox-territory gall-item__lightbox">
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-reception gall-item__lightbox">
+                <a href="@img/main/gallery-page/reception.png" data-fslightbox="reception" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reception.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reception.png" data-fslightbox="reception" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reception.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reception.png" data-fslightbox="reception" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reception.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reception.png" data-fslightbox="reception" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reception.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-complex gall-item__lightbox">
+                <a href="@img/main/gallery-page/complex.png" data-fslightbox="complex" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/complex.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/complex.png" data-fslightbox="complex" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/complex.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/complex.png" data-fslightbox="complex" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/complex.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/complex.png" data-fslightbox="complex" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/complex.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-grill-bar gall-item__lightbox">
+                <a href="@img/main/gallery-page/grill-bar.png" data-fslightbox="grill-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/grill-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/grill-bar.png" data-fslightbox="grill-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/grill-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/grill-bar.png" data-fslightbox="grill-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/grill-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/grill-bar.png" data-fslightbox="grill-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/grill-bar.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-tea-house gall-item__lightbox">
+                <a href="@img/main/gallery-page/tea-house.png" data-fslightbox="tea-house" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/tea-house.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/tea-house.png" data-fslightbox="tea-house" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/tea-house.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/tea-house.png" data-fslightbox="tea-house" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/tea-house.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/tea-house.png" data-fslightbox="tea-house" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/tea-house.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-reader-bar gall-item__lightbox">
+                <a href="@img/main/gallery-page/reader-bar.png" data-fslightbox="reader-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reader-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reader-bar.png" data-fslightbox="reader-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reader-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reader-bar.png" data-fslightbox="reader-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reader-bar.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/reader-bar.png" data-fslightbox="reader-bar" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/reader-bar.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-shop gall-item__lightbox">
+                <a href="@img/main/gallery-page/shop.png" data-fslightbox="shop" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/shop.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/shop.png" data-fslightbox="shop" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/shop.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/shop.png" data-fslightbox="shop" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/shop.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/shop.png" data-fslightbox="shop" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/shop.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-sport gall-item__lightbox">
+                <a href="@img/main/gallery-page/sport.png" data-fslightbox="sport" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/sport.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/sport.png" data-fslightbox="sport" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/sport.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/sport.png" data-fslightbox="sport" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/sport.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/sport.png" data-fslightbox="sport" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/sport.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-animation gall-item__lightbox">
+                <a href="@img/main/gallery-page/animation.png" data-fslightbox="animation" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/animation.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/animation.png" data-fslightbox="animation" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/animation.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/animation.png" data-fslightbox="animation" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/animation.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/animation.png" data-fslightbox="animation" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/animation.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-spa gall-item__lightbox">
+                <a href="@img/main/gallery-page/spa.png" data-fslightbox="spa" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/spa.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/spa.png" data-fslightbox="spa" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/spa.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/spa.png" data-fslightbox="spa" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/spa.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/spa.png" data-fslightbox="spa" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/spa.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-conference gall-item__lightbox">
+                <a href="@img/main/gallery-page/conference.png" data-fslightbox="conference" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/conference.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/conference.png" data-fslightbox="conference" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/conference.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/conference.png" data-fslightbox="conference" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/conference.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/conference.png" data-fslightbox="conference" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/conference.png" alt="">
+                </a>
+            </div>
+
+            <div class="gall-item__lightbox-fond gall-item__lightbox">
+                <a href="@img/main/gallery-page/fond.png" data-fslightbox="fond" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/fond.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/fond.png" data-fslightbox="fond" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/fond.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/fond.png" data-fslightbox="fond" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/fond.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/fond.png" data-fslightbox="fond" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/fond.png" alt="">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>

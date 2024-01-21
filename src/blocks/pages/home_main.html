@@ -1,0 +1,213 @@
+<main class="main">
+
+    <section class="main__banner">
+        <div class="banner__container">
+            <div class="banner__block">
+                <div class="banner__block-title">
+                    <h1>СОЛНЕЧНЫЙ<br><span>PARK-HOTEL & SPA</span></h1>
+                </div>
+                <form action="" method="GET" class="banner__block-booking booking-form">
+                    <div class="booking-form__cnt">
+                        <div class="booking-form__inputs">
+                            <div class="booking-form__input">
+                                <label for="date_in">Дата заезда: </label>
+                                <input required id="date_in" type="date" max="" name="date_in" value="">
+                            </div>
+                            <div class="booking-form__input">
+                                <label for="date_out">Дата выезда: </label>
+                                <input required id="date_out" type="date" min="" name="date_out" value="">
+                            </div>
+                            <div class="booking-form__input adult-input">
+                                <label for="adult_count">Взрослых </label>
+                                <input required readonly id="adult_count" type="text" name="adult_count" value="1" maxlength="3">
+                                <div class="booking-form__input-buttons">
+                                    <button class="count-button adult_count-increase">+</button>
+                                    <button class="count-button adult_count-decrease">-</button>
+                                </div>
+                            </div>
+                            <div class="booking-form__input child-input">
+                                <label for="child_count">Детей 2-11 лет </label>
+                                <input required readonly id="child_count" type="text" name="child_count" value="0" maxlength="3">
+                                <div class="booking-form__input-buttons">
+                                    <button class="count-button child_count-increase">+</button>
+                                    <button class="count-button child_count-decrease">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-form__check">
+                            <input checked id="some_rooms" type="checkbox" name="agreement" value="">
+                            <label for="some_rooms" class="custom-checkbox">
+                                <svg class="sprite-icon__home_galka-banner">
+                                    <use href="@img/icons/icons.svg#home_galka-banner"></use>
+                                </svg>
+                            </label>
+                            <p>Несколько номеров</p>
+                        </div>
+                    </div>
+                    <button class="booking-form__button common-button__fill" type="submit">
+                        <svg class="sprite-icon__home_search-banner">
+                            <use href="files/sprite.svg#search_banner"></use>
+                        </svg>
+                        искать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__stock">
+        <div class="stock__container">
+            <div class="stock__block">
+                <div class="stock__block-cashback">
+                    <h2 class="stock-cashback__title">УЧАСТВУЙ В АКЦИИ! КЕШБЭК 20% ПРИ ОПЛАТЕ КАРТАМИ БАНКОВ-ПАРТНЕРОВ</h2>
+                    <p>Оплачивайте поездку от трех ночей с помощью карт наших банков-партнеров и получаете кэшбек 20% с каждой оплаты.</p>
+                    <p>ВТБ Банк, Райффайзен Банк, МТС Банк, ПромСвязьБанк, РоссельхозБанс, РосБанк.</p>
+                </div>
+                <div class="stock__block-booking">
+                    <div class="stock-booking__banks">
+                        <div class="stock-booking__banks-mobile">
+                            <svg class="sprite-icon__home_vtb-stock stock-booking__bank">
+                                <use href="@img/icons/icons.svg#home_vtb-stock"></use>
+                            </svg>
+                            <svg class="sprite-icon__home_raifaizen-stock stock-booking__bank">
+                                <use href="@img/icons/icons.svg#home_raifaizen-stock"></use>
+                            </svg>
+                        </div>
+                        <div class="stock-booking__banks-mobile">
+                            <svg class="sprite-icon__home_psb-stock stock-booking__bank">
+                                <use href="@img/icons/icons.svg#home_psb-stock"></use>
+                            </svg>
+                            <svg class="sprite-icon__home_rossbank-stock stock-booking__bank">
+                                <use href="@img/icons/icons.svg#home_rossbank-stock"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="" class="stock-booking__button">перейти к бронированию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__gallery">
+        <div class="gallery__container">
+            <div class="gallery__block">
+                <h2 class="gallery__title common-title">Галерея</h2>
+                <div class="gallery__image-items">
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_1.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_1.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_2.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_2.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img-huge.png" class="gallery__image-item gallery__image-item-big gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img-huge.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_3.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_3.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_4.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_4.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_5.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_5.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_6.png" class="gallery__image-item">
+                        <img src="@img/main/home-page/gallery/img_6.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_7.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_7.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_8.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_8.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_9.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_9.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_10.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_10.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_11.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_11.png" alt="">
+                    </a>
+                    <a data-fslightbox="gallery" href="@img/main/home-page/gallery/img_12.png" class="gallery__image-item gallery__image-hidden">
+                        <img src="@img/main/home-page/gallery/img_12.png" alt="">
+                    </a>
+                </div>
+                <a href="/gallery.html" class="gallery__button common-button__transparent">вся галерея</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__news">
+        <div class="news__container">
+            <div class="news__block">
+                <h2 class="news__block-title common-title">Новости</h2>
+                <div class="news__block-cnt">
+                    <div class="news__cnt-items">
+                        <div class="news__cnt-item news-item">
+                            <h3 class="news-item__title">день spa</h3>
+                            <p class="news-item__date">23 Августа 2019, 14:56</p>
+                            <div class="news-item__text">
+                                Дорогие гости! Теперь Вы можете приехать к нам просто, чтобы посетить SPA. Такой визит будет стоить 6 700 рублей (в данную стоимость включена сумма 2 400 руб. в счёт трат в SPA-центре, на любые процедуры в beauty-зоне или на покупку профессиональной косметики на выбор). Более подробно о таком варианте отдыха можно узнать по телефону 8 499 755 88 88.
+                            </div>
+                        </div>
+                        <div class="news__cnt-item news-item">
+                            <h3 class="news-item__title">день spa</h3>
+                            <p class="news-item__date">23 Августа 2019, 14:56</p>
+                            <div class="news-item__text">
+                                Дорогие гости! Теперь Вы можете приехать к нам просто, чтобы посетить SPA. Такой визит будет стоить 6 700 рублей (в данную стоимость включена сумма 2 400 руб. в счёт трат в SPA-центре, на любые процедуры в beauty-зоне или на покупку профессиональной косметики на выбор). Более подробно о таком варианте отдыха можно узнать по телефону 8 499 755 88 88.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__cnt-items">
+                        <div class="news__cnt-item news-item">
+                            <h3 class="news-item__title">НОВЫЙ РЕСТОРАН В СОЛНЕЧНОМ!</h3>
+                            <p class="news-item__date">7 Марта 2019, 12:21</p>
+                            <div class="news-item__text">
+                                В Отеле открылся новый панорамный <br>ресторан шведской линии – ЧЕРДАК LOFT!
+                            </div>
+                        </div>
+                        <div class="news__cnt-item news-item">
+                            <h3 class="news-item__title">НОВЫЙ РЕСТОРАН В СОЛНЕЧНОМ!</h3>
+                            <p class="news-item__date">7 Марта 2019, 12:21</p>
+                            <div class="news-item__text">
+                                В Отеле открылся новый панорамный <br>ресторан шведской линии – ЧЕРДАК LOFT!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/news.html" class="news__block-button common-button__transparent">все новости</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__search">
+        <div class="search__container">
+            <div class="search__block">
+                <div class="search__block-map map-block">
+                    <h2 class="map-block__title search-title__common">Как найти <br>наш отель</h2>
+                    <div class="map-block__gps">
+                        <span>GPS-КООРДИНАТЫ</span>
+                        <p>56.254726 северной широты</p>
+                        <p>36.888351 восточной долготы</p>
+                        <a href="" class="common-button__transparent">смотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="search__block-hotels hotels-block">
+                    <div class="hotels-block__img">
+                        <img src="@img/main/home-page/search/club.png" alt="club">
+                    </div>
+                    <div class="hotels-block__invite">
+                        <h2 class="search-title__common">Посетите так же<br>наши другие отели</h2>
+                        <div class="hotels-block__invite-img">
+                            <img src="@img/main/home-page/search/club.png" alt="club">
+                        </div>
+                        <a class="common-button__transparent" href="">прометей клуб</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

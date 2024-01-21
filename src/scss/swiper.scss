@@ -1,0 +1,119 @@
+@import 'swiper-bundle.min';
+// Миксины
+@mixin fontz($fz) {
+    font-size: $fz * 1px;
+}
+// краткий вызов: lh
+@mixin lineheight($lh,$fz) {
+    line-height: ($lh/$fz)*100%;
+}
+
+.section__swiper {
+}
+.swiper__container {
+}
+// =========================================================== //
+.swiper-container {
+}
+.image-slider {
+    padding: 50px 0 70px;
+    // Для мультирядности: нужно установить высоту или поместить в блок, где есть высота
+    // В общем как-то некорректно работает, почему-то второй ряд картинок не отображается
+    // height: 700px;
+    // .swiper-slide {
+    //     height: calc((100% - 30px) / 2); // 30px это отступы в настройке
+    //     overflow: hidden;
+    // }
+
+    // Вертикальный слайдер
+    // padding: 0px 0 0px;
+    // height: 700px;
+
+    // Эффект куб
+    // width: 500px;
+
+    // ===========Слайдер в слайдере================================================ //
+    .image-in-slider {
+        height: 250px;
+    }
+    .image-in-slider__wrapper {
+    }
+    .image-in-slider__slide {
+        height: 250px;
+    }
+    .image-in-slider__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+// =========================================================== //
+.swiper-wrapper {
+}
+.image-slider__wrapper {
+
+}
+// =========================================================== //
+.swiper-slide {
+}
+.image-slider__slide {
+}
+// =========================================================== //
+.image-slider__image {
+    // центрирует слайды
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
+// =========================================================== //
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+// =========================================================== //
+.image-slider__prev {
+    &::after {
+        color: #FFFFFF;
+        @include fontz(80);
+    }
+}
+.image-slider__next {
+    // Иконочный шрифт, менять можно цвет и размер
+    &::after {
+        color: #FFFFFF;
+        @include fontz(80);
+    }
+}
+// =========================================================== //
+.swiper-pagination {
+    bottom: 0;
+}
+.image-slider__pagination {
+    // Стилизация точек
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        color: #000000;
+        line-height: 20px;
+        @include fontz(14);
+        background-color: #FFFFFF;
+    }
+    // Стилизация фракции
+    .swiper-pagination-fraction {
+        @include fontz(20);
+        color: #ffffff;
+    }
+    // Стилизация прогрессбар
+    .swiper-pagination-progressbar-fill {
+        background-color: red;
+    }
+}
+// =========================================================== //
+.swiper-scrollbar {
+    // Стилизация скроллбара
+    .swiper-scrollbar-drag {
+        cursor: pointer;
+        background-color: blue;
+    }
+}

@@ -1,0 +1,478 @@
+// Переменные
+:root {
+    --index: calc(1vw + 1vh);
+
+    --default__transition: all 0.3s ease 0s;
+    --def_ff: 'Gilroy';
+    --def_color: #ffffff;
+    --def_background-color: #272727;
+}
+// Миксины
+@mixin fontz($fz) {
+    font-size: $fz * 1px;
+}
+// краткий вызов: lh
+@mixin lineheight($lh,$fz) {
+    line-height: ($lh/$fz)*100%;
+}
+/* ------------------------------------------------------------------------------------------- */
+// Подключение отдельных файлов стилей
+@import "fonts";
+@import "nullstyle";
+@import "header";
+@import "home_main";
+@import "contacts_main";
+@import "gallery_main";
+@import "news_main";
+@import "rooms_main";
+@import "about_main";
+@import "footer";
+
+@import "swiper";
+@import "datepicker";
+/* ------------------------------------------------------------------------------------------- */
+/* Чтобы скролл был на всем макете */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------------------MAIN------------------------------------------------------------ */
+.main { 
+    /* позволяем контенту увеличиваться и он прибивает футер вниз */
+    flex: 1 1 auto;
+}
+/* ------------------------------------------------------------------------------------------- */
+// Любые объект, в классе которого содержится такой класс __container, то к нему применить эти свойства
+// то есть теперь достаточно просто писать header__container и все, без приписки доп класса _container
+[class*="__container"] {
+    max-width: 1370px; // + 30px из-за отступа безопасности
+    margin: 0 auto;
+    padding: 0 15px;
+    /* --- PC --- */
+    @media (max-width: 1145.98px) {
+        
+    }
+    /* --- PC Small --- */
+    @media (max-width: 1057px) {
+        
+    }
+    // дробные значения так как планшет в горизонтальном имеет 768, но нам не нужна мобилка на планшете
+    // поэтому немного уменьшаем
+    /* --- TABLET --- */
+    @media (max-width: 991.98px) {
+     
+    }
+    /* --- MOBILE --- */
+    @media (max-width: 767.98px) {
+        
+    }
+    /* --- MOBILE SMALL --- */
+    @media (max-width: 479.98px) {
+       
+    }
+    /* --- MOBILE LITTLE --- */
+    @media (max-width: 379.98px) {
+
+    }
+}
+
+// Обработка переключателя языка на странице
+html {
+    eng {
+        display: none;
+    }
+    .language-selector__english {
+        display: block;
+    }
+    .language-selector__russian {
+        display: none;
+    }
+    &.english {
+        ru {
+            display: none;
+        }
+        eng {
+            display: inline-block;
+        }
+        .language-selector__english {
+            display: none;
+        }
+        .language-selector__russian {
+            display: block;
+        }
+        .news-info__preview {
+            ru {
+                display: none;
+            }
+            eng {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden; // все, что более двух строк сокроется
+            }
+        }
+        .help__card-info {
+            ru {
+                display: none;
+            }
+            eng {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden; // все, что более двух строк сокроется
+            }
+        }
+    }
+    &.russian {
+        ru {
+            display: inline-block;
+        }
+        eng {
+            display: none;
+        }
+        .language-selector__russian {
+            display: none;
+        }
+        .language-selector__english {
+            display: block;
+        }
+        .news-info__preview {
+            ru {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden; // все, что более двух строк сокроется
+            }
+            eng {
+                display: none;
+            }
+        }
+        .help__card-info {
+            ru {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden; // все, что более двух строк сокроется
+            }
+            eng {
+                display: none;
+            }
+        }
+    }
+}
+
+// TODO: BEM-Blocks !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/* ============================================================================================== */
+
+// !!! HOVER Link animation !!! //
+// Вешается на ссылку, для нужной ссылки устанавливать background-color
+// &::after {
+//     background-color: #ffffff;
+// }
+.link-animation {
+    // Hover animation
+    position: relative;
+    @media (min-width: 991.98px) {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            transition: width 0.3s; 
+        }
+        &:hover {
+            &::after {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.common-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -109px;
+    width: 218px;
+    height: 92.2px;
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media (max-width: 991.98px) {
+        width: 164px;
+        height: 69px;
+        margin-left: -82px;
+    }
+}
+.common-button__fill {
+    width: 212px;
+    height: 40px;
+    color: #000000;
+    @include fontz(14);
+    @include lineheight(14,14);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC14B;
+    border-radius: 5px;
+    border: 1px solid #FFC14B;
+    transition: var(--default__transition);
+    @media (min-width: 991.98px) {
+        &:hover {
+            color: #FFC14B;
+            background-color: transparent;
+        }
+    }
+}
+.common-button__transparent {
+    background-color: transparent;
+    @include fontz(14);
+    @include lineheight(14,14);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #FFC14B;
+    border-radius: 5px;
+    color: #FFC14B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212px;
+    height: 40px;
+    transition: var(--default__transition);
+    @media (min-width: 991.98px) {
+        &:hover {
+            color: #000000;
+            background-color: #FFC14B;
+        }
+    }
+}
+.common-title {
+    @include fontz(48);
+    @include lineheight(72,48);
+    font-weight: 500;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 991.98px) {
+        @include fontz(28);
+        @include lineheight(48,28);
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+/* --------------------------------COMMON-NAVIGATION----------------------------------------------------------- */
+.main__navigation {
+    @media (max-width: 767.98px) {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+}
+.navigation__container {
+}
+.navigation__block {
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    @media (max-width: 767.98px) {
+        border-top: unset;
+    }
+}
+// =========================================================== //
+.raw-nav__block {
+}
+.raw-nav__list {
+    display: flex;
+}
+.raw-nav__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.raw-nav__link {
+    color: rgba(255, 255, 255, 0.52);
+    @include fontz(14);
+    @include lineheight(16,14);
+    transition: var(--default__transition);
+    @media (min-width: 991.98px) {
+        &:hover {
+            text-decoration: underline;
+        } 
+    }
+
+}
+.current__page-link {
+    text-decoration: underline;
+    pointer-events: none;
+}
+.sprite-icon__navigation_vector {
+    width: 6px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+/* -----------------------------FOOTER-------------------------------------------------------- */
+
+
+
+// ====================SLICK-SLIDER==================== //
+
+/* Лента слайдов */
+.step-block__cards .slick-track {
+	// чтобы слайды выстроились в ряд
+	display: flex;
+	// // чтобы добавить адаптивную высоту для картинок, то надо добавить
+	align-items: flex-start; // прижмет слайды к верху
+    justify-content: flex-start;
+    // min-height: 46px;
+}
+.step-block__cards .slick-list {
+    margin: 0 -15px !important;
+}
+.step-block__cards .slick-list.draggable {
+    margin: 0 auto;
+ }
+
+.step-block__cards .slick-slide {
+    margin: 0 15px !important;
+    @media (max-width: 479.98px) {
+        &:not(:last-child) {
+            margin-right: inherit;
+        }
+        overflow: hidden;
+    }
+}
+
+
+.step-block__cards .slick-dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    cursor: pointer;
+    li {
+        list-style: none;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    button {
+        transition: var(--default__transition);
+        font-size: 0;
+        width: 48px;
+        height: 3px;
+        background-color: #CCD9FF;
+    }
+    .slick-active {
+        button {
+            background-color: #005DFF;
+        }
+    }
+}
+
+
+// ====================POPUPS========================== //
+.popup {
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	// background: #18154B;
+    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+	top: 0;
+	left: 0;
+	// чтобы попап появлялся с анимицией красиво, то нельзя display none/block использовать
+	// делаем иначе убирая проявление и возможность выделения
+	opacity: 0;
+	visibility: hidden;
+	// чтобы был скролл, если много текста
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+	z-index: 50000;
+}
+// Класс вешается на ту ссылку, которой хотим вызывать попап
+// с ссылке указываем id нужного попапа href="#popup__search"
+.popup__link {}
+// на теге header/main/footer добавить класс, это для расчета ширины скролла
+// но тогда дергается влево на величину ширины скролла все, если не ставить нигде, то вроде итак нормально попап становится
+.lock-padding {}
+
+// -----------------------------------------------
+// Тут используем JS (тоже самое, но при получении класс open)
+.popup {
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        .popup__content {
+            transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+            opacity: 1;
+        }
+    }
+}
+// ---------------------------------------------------------- стилизация попапа (общий)
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// чтобы не прилипал к краям экрана
+	padding: 30px 15px;
+}
+.popup__content {
+	background: #FFFFFF;
+	color: #000;
+	max-width: 600px;
+    width: 100%;
+    height: 100%;
+	padding: 30px;
+	position: relative;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 20px;
+	// анимация
+	transition: all 0.8s ease 0s;
+	opacity: 0;
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__search-field {
+    position: relative;
+}
+.popup__search-input {
+    width: 100%;
+    height: 60px;
+    @include fontz(20);
+    font-family: var(--default__ff-600);
+    border-radius: 50px;
+    background: #F0F5FB;
+    padding: 0 45px 0 25px;
+    // Выравнивание посередине
+    vertical-align: middle;
+    position: relative;
+    &::placeholder {
+        @include fontz(16);
+        font-family: var(--default__ff-600);
+        line-height: 135%;
+        color: rgba(24, 21, 75, 0.6);
+    }
+}
+.search-button {
+    background: transparent !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: 15px !important;
+    margin-top: -10px !important;
+}
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}

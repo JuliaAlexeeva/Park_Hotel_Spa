@@ -1,0 +1,51 @@
+                <div class="gallery-page__items">
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="territory" class="gall-item__img">
+                            <img src="@img/main/gallery-page/territory.png" alt="territory">
+                        </div>
+                        <p>Территория</p>
+                    </div>
+                    <div class="gallery-page__item gall-item">
+                        <div data-category="reception" class="gall-item__img">
+                            <img src="@img/main/gallery-page/reception.png" alt="reception">
+                        </div>
+                        <p>Ресепшн</p>
+                    </div>
+		</div>         
+
+
+<!-- Галерея картинок по категориям для lightbox -->
+<!-- у каждого блока с картинками должен быть свой отдельный общий data-fslightbox согласно категории -->
+<!-- если все будут одинаковые, то счетчик их все разом будет считать и показывать -->
+<!-- а так будет конкретно этим перезаписывать data-fslightbox="gallery" -->
+
+            <div class="gall-item__lightbox-territory gall-item__lightbox">
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+                <a href="@img/main/gallery-page/territory.png" data-fslightbox="territory" class="gall-item__collection">
+                    <img src="@img/main/gallery-page/territory.png" alt="">
+                </a>
+            </div>
+
+
+
+
+
+.gall-item__lightbox {
+    display: none;
+}
+.gall-item__lightbox-territory {
+}
+.gall-item__collection {
+}
+
+
+JS: 
+gallery.js

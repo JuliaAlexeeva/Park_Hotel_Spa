@@ -1,0 +1,296 @@
+// Миксины
+@mixin fontz($fz) {
+    // font-size: $fz / 16 + rem;
+    font-size: $fz * 1px;
+}
+// краткий вызов: lh
+@mixin lineheight($lh,$fz) {
+    line-height: ($lh/$fz)*100%;
+}
+/* ---------------------------MAIN-CONTACTS----------------------------------------------------- */
+.main__contacts {
+    padding-bottom: 70px;
+    @media (max-width: 991.98px) {
+        padding-bottom: 30px;
+    }
+}
+.contacts__container {
+}
+.contacts__block {
+}
+// =========================================================== //
+.contacts__title {
+    &:not(:last-child) {
+        margin-bottom: 15px !important;
+    }
+    @media (max-width: 991.98px) {
+        &:not(:last-child) {
+            margin-bottom: 10px !important;
+        }
+    }
+}
+// =========================================================== //
+.contacts__columns {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1245.98px) {
+        flex-direction: column;
+    }
+}
+.contacts__column {
+}
+.column-cont {
+    &:first-child {
+        margin: 0 20px 0 0;      
+        @media (max-width: 1245.98px) {
+            margin: 0 0 20px 0;
+        }
+    }
+    &:last-child {
+        display: flex;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+}
+// =========================================================== //
+.column-cont__title {
+}
+.common-contacts__title {
+    @include fontz(32);
+    @include lineheight(48,32);
+    font-weight: 500;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 991.98px) {
+        @include fontz(24);
+        @include lineheight(36,24);
+    }
+}
+.column-cont__info {
+    @include fontz(14);
+    @include lineheight(20,14);
+    letter-spacing: 0.56px;
+    span {
+        color: #FFC14B;
+        font-weight: 700
+    }
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.column-cont__button {
+    margin-top: 30px;
+    @media (max-width: 991.98px) {
+        margin-top: 20px;
+    }
+}
+// =========================================================== //
+.column-cont__main {
+    margin-right: 30px;
+    max-width: 415px;
+    @media (max-width: 1245.98px) {
+        max-width: 515px;
+    }
+    @media (max-width: 767.98px) {
+        max-width: unset;
+        margin-right: 0px;
+    }
+}
+.column-cont__bankinfo {
+    padding-top: 55px;
+    max-width: 382px;
+    p {
+        @include fontz(14);
+        @include lineheight(20,14);
+    }
+    @media (max-width: 1245.98px) {
+        max-width: 482px;
+    }
+    @media (max-width: 991.98px) {
+        padding-top: 45px;
+    }
+    @media (max-width: 767.98px) {
+        padding-top: 0px;
+        margin-top: 30px;
+        max-width: unset;
+    }
+}
+
+
+/* ---------------------------MAIN-FEEDBACK----------------------------------------------------- */
+.main__feedback {
+    background: rgba(23, 23, 23, 0.9);
+    padding: 30px 0 50px;
+}
+.feedback__container {
+}
+.feedback__block {
+}
+// =========================================================== //
+.feedback__title {
+}
+.feedback__subtitle {
+    @include fontz(14);
+    @include lineheight(20,14);
+}
+// =========================================================== //
+.feedback__form {
+    margin-top: 35px;
+    @media (max-width: 767.98px) {
+        margin-top: 25px;
+    }
+    @media (max-width: 479.98px) {
+        margin-top: 15px;
+    }
+}
+// =========================================================== //
+.feedback__form-inputs {
+}
+.feed-inputs {
+    display: flex;
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+    }
+}
+// =========================================================== //
+.feed-inputs__persdata {
+}
+.persdata-input {
+    margin-right: 30px;
+    flex: 0 1 771px;
+    @media (max-width: 767.98px) {
+        margin-right: 0px;
+        flex: 0 1 100%;
+    }
+}
+.persdata-input__contatcs {
+    display: flex;
+    margin-top: 15px;
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+    }
+}
+// =========================================================== //
+.input-common {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 5px;
+    color: #FFFFFF;
+    @include fontz(14);
+    @include lineheight(20,14);
+    letter-spacing: 0.56px;
+    padding: 15px 20px;
+    &::placeholder {
+        color:  #ffffff;
+        opacity: 0.8;
+    }
+}
+.persdata-input__fio {
+    width: 100%;
+}
+.persdata-input__phone {
+    flex: 0 1 375px;
+    margin-right: 20px;
+    @media (max-width: 767.98px) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+        flex: 0 1 100%;
+    }
+}
+.persdata-input__email {
+    flex: 0 1 375px;
+    @media (max-width: 767.98px) {
+        margin-bottom: 15px;
+        flex: 0 1 100%;
+    }
+}
+// =========================================================== //
+.feed-inputs__message {
+}
+.message-input {
+    flex: 0 1 539px;
+    @media (max-width: 767.98px) {
+        flex: 0 1 100%;
+    }
+}
+// =========================================================== //
+.message-input__field {
+    resize: none;
+    height: 115px;
+    width: 100%;
+}
+// =========================================================== //
+.feedback__form-buttons {
+}
+.feed-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+// =========================================================== //
+.feed-buttons__check {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    @include fontz(14);
+    @include lineheight(14,14);
+    position: relative;
+    p {
+        @include fontz(13);
+        @include lineheight(20,13);
+        @media (max-width: 359.98px) {
+            @include fontz(11);
+            @include lineheight(18,11);
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+        &:checked + .custom-checkbox {
+            svg {
+                display: inherit;
+            }
+        }
+        &:focus + .custom-checkbox {
+            svg {
+                display: inherit;
+            }
+        }
+        &:not(:checked) + .custom-checkbox {
+            svg {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 767.98px) {
+        margin-right: 0px;
+    }
+}
+.feedback__custom-checkbox {
+    min-width: 20px;
+    height: 20px;
+    border: none !important;
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    transition: var(--default__transition);
+}
+.custom-checkbox {
+}
+// =========================================================== //
+.sprite-icon__home_galka-banner {
+}
+.feedback__custom-galka {
+    width: 19.5px;
+    height: 14px;
+}
+// =========================================================== //
+.feed-buttons__submit {
+    @media (max-width: 767.98px) {
+        margin: 20px auto 0;
+    }
+}
